@@ -2,11 +2,12 @@
 /**
 *main - Entry point
 *
-*printf - prints formated string to standard output
-*Return  0 (Success)
+*printf: Prints formated string to standard output
+*
+*Return: Always 0 (Success)
 */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is piece of art,");
+	printf("with proper grammar, but the outcome is a piece of art,");
 	return (0);
 }

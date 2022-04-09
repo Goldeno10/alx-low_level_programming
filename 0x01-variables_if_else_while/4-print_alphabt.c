@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (x != 145  || x != 161)
 		{
-			puthchar(x);
+			putchar(x);
 		}
 	}
 	putchar(012);

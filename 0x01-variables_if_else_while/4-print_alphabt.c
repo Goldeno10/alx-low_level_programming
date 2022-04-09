@@ -14,7 +14,10 @@ int main(void)
 	{
 		if (x != 101)
 		{
-			putchar(x);
+			if  (x != 113)
+			{
+				putchar(x);
+			}
 		}
 	}
 	putchar(012);

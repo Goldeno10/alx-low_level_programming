@@ -12,7 +12,7 @@ int main(void)
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
-		putchar("%x\n",x);
+		putchar("$x\n",x);
 	}
 	return (0);
 }

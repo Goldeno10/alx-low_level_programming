@@ -12,7 +12,7 @@ int main(void)
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
-		if (x != 145  || x != 161)
+		while(x != 145  || x != 161)
 		{
 			putchar(x);
 		}

@@ -20,8 +20,8 @@ void print_alphabet(void)
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
-		putchar(x);
+		_putchar(x);
 	}
-	putchar(012);
+	_putchar(012);
 }
 

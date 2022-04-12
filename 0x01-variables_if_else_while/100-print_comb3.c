@@ -23,6 +23,5 @@ int main(void)
 		}
 	}
 	putchar(012);
-	return (0);
 }
 

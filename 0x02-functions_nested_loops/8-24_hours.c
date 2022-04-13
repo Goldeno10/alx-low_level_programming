@@ -2,9 +2,6 @@
 /**
 *jack_bauer- prints time jack bauer movie esq
 *
-*@a: holds and count the hour
-*@b: holdes and count the minute
-*
 *Return: Returns nothing
 */
 void jack_bauer(void)

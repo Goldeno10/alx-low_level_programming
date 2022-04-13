@@ -2,9 +2,9 @@
 /**
 *_isalpha- Checks if a character is an alphabet
 *
-*@c : Hold the character being compared
+*@c: Hold the character being compared
 *
-*Return : Alawys 1 if true and 0 otherwise
+*Return: Alawys 1 if true and 0 otherwise
 */
 int _isalpha(int c)
 {

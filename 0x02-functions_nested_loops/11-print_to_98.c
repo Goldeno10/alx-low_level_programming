@@ -21,8 +21,14 @@ void print_to_98(int n)
 			_putchar(a + '0');
 			_putchar(b + '0');
 		}
+		if (n != 98)
+		{
 		_putchar(',');
 		_putchar(' ');
-
+		}
+		else
+		{
+			_putchar(NUL);
+		}
 	}
 }

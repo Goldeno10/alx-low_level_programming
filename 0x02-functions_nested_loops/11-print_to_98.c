@@ -34,8 +34,8 @@ void print_to_98(int n)
 			}
 		}
 	}
-	else
-	
+	if (n > 98)
+	{
 		for (c = n; c <= 98; c--)
 		{
 			if (n < 9)
@@ -57,5 +57,5 @@ void print_to_98(int n)
 				_putchar(0);
 			}
 		}
-
+	}
 }

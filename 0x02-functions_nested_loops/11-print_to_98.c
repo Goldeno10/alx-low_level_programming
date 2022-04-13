@@ -10,7 +10,7 @@ void print_to_98(int n)
 	int b = n % 10;
 	int c;
 
-	for (c = n; c <= 98; c++);
+	for (c = n; c <= 98; c++)
 	{
 		if (n < 9)
 		{

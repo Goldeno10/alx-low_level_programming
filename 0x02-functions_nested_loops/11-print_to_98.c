@@ -6,6 +6,9 @@
 */
 void print_to_98(int n)
 {
+	int a = n / 10;
+	int b = n % 10;
+
 	do
 	{
 		if (n < 9)
@@ -14,8 +17,8 @@ void print_to_98(int n)
 		}
 		else
 		{
-			_putchar((n / 10));
-			_putchar((n % 10));
+			_putchar(a + '0');
+			_putchar(b + '0');
 		}
 		_putchar(',');
 		_putchar(' ');
@@ -28,8 +31,8 @@ void print_to_98(int n)
 		}
 		else
 		{
-			_putchar((n / 10));
-			_putchar((n % 10));
+			_putchar(a + '0');
+			_putchar(b + '0');
 		}
 		_putchar(',');
 		_putchar(' ');

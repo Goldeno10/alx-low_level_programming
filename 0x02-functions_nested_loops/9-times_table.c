@@ -16,7 +16,7 @@ void times_table(void)
 			int c = a * b;
 
 			_putchar(c + '0');
-			_puthchar(44);
+			_putchar(44);
 			_putchar(20);
 		}
 	_putchar(012);

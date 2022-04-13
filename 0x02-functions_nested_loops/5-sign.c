@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
 *print_sign- Checks if a number is greater, equal or less than zero

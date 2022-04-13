@@ -3,7 +3,6 @@
 *_abs- Comutes absolute values
 *
 *@n: value being compared
-*@b: value that computs the absolute value
 *
 *Return: Always return the absolute value
 */

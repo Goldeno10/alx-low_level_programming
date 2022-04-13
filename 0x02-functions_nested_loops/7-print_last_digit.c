@@ -8,6 +8,6 @@
 int print_last_digit(int n)
 {
 	int b = (n % 10);
-	_putchar('n % 10');
+	_putchar(b);
 	return (b);
 }

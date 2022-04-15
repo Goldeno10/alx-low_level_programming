@@ -33,4 +33,15 @@ void print_remaining_days(int month, int day, int year)
 			printf("Remaining days: %d\n", 365 - day);
 		}
 	}
+	while (d > 9)
+	{
+	d /= 10;
+	count *= 10;
+	}
+
+	for (; count >= 1; count /= 10)
+	{
+	_putchar(((m / count) % 10) + 48);
+	}
 }
+

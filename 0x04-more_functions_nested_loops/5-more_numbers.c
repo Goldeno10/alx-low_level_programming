@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-*print_numbers- prints numbers 0 through  9
+*more_numbers- prints numbers 0 through  9
 *
 *Return: returns nothing
 */
-void print_numbers(void)
+void more_numbers(void)
 {
 	int a;
 	int b;
@@ -12,6 +12,7 @@ void print_numbers(void)
 	int i;
 
 	i = 0;
+	c = 0;
 	while (i < 10)
 	{
 		while (c < 14)
@@ -30,7 +31,6 @@ void print_numbers(void)
 			c++;
 		}
 		i++;
-		c = 0;
 	}
 	_putchar(012);
 }

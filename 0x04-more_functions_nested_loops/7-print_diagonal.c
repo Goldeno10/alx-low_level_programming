@@ -16,7 +16,7 @@ void print_diagonal_line(int n)
 		{
 			_putchar('0');
 		}
+		c++;
 	}
-	c++;
 	_putchar('\n');
 }

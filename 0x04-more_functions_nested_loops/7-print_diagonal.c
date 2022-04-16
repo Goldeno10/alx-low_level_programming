@@ -4,7 +4,7 @@
 *@n: holds the value being counted
 *Return: returns nothing
 */
-void print_diagonal_line(int n)
+void print_diagonal(int n)
 {
 	int b;
 	int c;

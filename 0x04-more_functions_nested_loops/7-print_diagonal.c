@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*print_diagonal_line- print dashes n time
+*print_diagonal- print dashes n time
 *@n: holds the value being counted
 *Return: returns nothing
 */

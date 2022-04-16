@@ -15,9 +15,9 @@ void more_numbers(void)
 	c = 0;
 	while (i < 10)
 	{
-		while (c < 14)
+		while (c <= 14)
 		{
-			if (c < 10)
+			if (c <= 9)
 			{
 				b = c;
 			}
@@ -32,6 +32,7 @@ void more_numbers(void)
 			c++;
 		}
 		i++;
+		c = 0;
 		_putchar(012);
 	}
 }

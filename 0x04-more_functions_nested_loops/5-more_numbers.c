@@ -28,9 +28,10 @@ void more_numbers(void)
 				_putchar(a + '0');
 			}
 			_putchar(b + '0');
+
 			c++;
 		}
 		i++;
+		_putchar(012);
 	}
-	_putchar(012);
 }

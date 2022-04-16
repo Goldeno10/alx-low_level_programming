@@ -10,9 +10,9 @@ void print_diagonal_line(int n)
 	int c;
 
 	c = 0;
-	while ( c < n)
+	while (c < n)
 	{
-		for (b = 0; b < n; b++)
+		for (b = 0; b <= n; b++)
 		{
 			_putchar('0');
 		}

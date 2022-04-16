@@ -9,11 +9,12 @@ void print_numbers(void)
 	int a;
 	int b;
 	int c;
+	int i;
 
 	i = 0;
-	while (i < 10);
+	while (i < 10)
 	{
-		while (c < 14);
+		while (c < 14)
 		{
 			if (c < 10)
 			{

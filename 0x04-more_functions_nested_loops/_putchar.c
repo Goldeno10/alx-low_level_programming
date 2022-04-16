@@ -6,5 +6,5 @@
 */
 void _putchar(char c)
 {
-putchar('c');
+	putchar(c);
 }

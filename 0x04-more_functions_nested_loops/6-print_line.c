@@ -11,7 +11,7 @@ void print_line(int n)
 	c = 0;
 	if (n > 0)
 	{
-		for (;c <= n; c++)
+		while (c <= n)
 		{
 			_putchar(45);
 		}

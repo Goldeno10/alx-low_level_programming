@@ -11,9 +11,9 @@ void print_line(int n)
 	c = 0;
 	if (n > 0)
 	{
-		while (c <= n)
+		while (c < (n + ))
 		{
-			_putchar(45);
+			_putchar(95);
 		}
 		 _putchar(012);
 	}

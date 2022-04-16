@@ -8,16 +8,16 @@ void print_line(int n)
 {
 	int c;
 
-	c=0;
+	c = 0;
 	if (n > 0)
 	{
-		while (c <= n)
+		while (c < (n + 1))
 		{
-			_putchar('-');
+			_putchar(45);
                 	c++;
 		}
 		 _putchar(012);
-        }
+	}
 	else
 	{
 		_putchar(012);

@@ -11,9 +11,9 @@ void print_numbers(void)
 	int c;
 
 	i = 0;
-	while (i < 10)
+	while (i < 10);
 	{
-		while (c < 14)
+		while (c < 14);
 		{
 			if (c < 10)
 			{
@@ -25,6 +25,7 @@ void print_numbers(void)
 			}
 			_putchar(a);
 			_putchar(b);
+			c++;
 		}
 		i++;
 	}

@@ -14,7 +14,7 @@ void print_line(int n)
 		while (c < (n + 1))
 		{
 			_putchar(45);
-                	c++;
+			c++;
 		}
 		 _putchar(012);
 	}

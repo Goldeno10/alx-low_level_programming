@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-*print_line- print dashes n time
-*@n: hols the value being counted
+*print_diagonal_line- print dashes n time
+*@n: holds the value being counted
 *Return: returns nothing
 */
 void print_diagonal_line(int n)

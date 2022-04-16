@@ -19,13 +19,13 @@ void print_numbers(void)
 			if (c < 10)
 			{
 				a = c;
+				_putchar(a);
 			}
 			else
 			{
 				b = c;
+				_putchar(b);
 			}
-			_putchar(a);
-			_putchar(b);
 			c++;
 		}
 		i++;

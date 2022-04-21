@@ -5,10 +5,12 @@
 *_strlen- returns the lenght of a string
 *
 *@s: holds the  string
-*Return: always 0 (success)
+*Return: lenght of s
 */
 int _strlen(char *s)
 {
-	strlen(s);
-	return (0);
+	int len;
+
+	len = strlen(s);
+	return (len);
 }

@@ -7,7 +7,7 @@
 *@s: holds the  string
 *Return: always 0 (success)
 */
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	strlen(s);
 	return (0);

@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 *_puts- prints a string followed by a new line
-*@str: Holdes the string
+*@str: Holdes the string 
 *Return: return nothing
 */
 void _puts(char *str)

@@ -8,12 +8,18 @@
 void print_rev(char *s)
 {
 	int c;
+	int i;
 	int len0 = strlen(s);
 	char temp;
 
 	len = len0 - 1;
+	i = 0;
+	while (s{i} != '\0'}
+	{
+		i++
+	}
 
-	for (c = 0; c < (len / 2); c++)
+	for (c = 0; c < i; c++)
 	{
 		temp = s{c};
 		s{c} = s{len - c};

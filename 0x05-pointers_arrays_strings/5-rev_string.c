@@ -21,7 +21,7 @@ void rev_string(char *s)
 	for (c = 0; c < len / 2; c++)
 	{
 		temp = s[c];
-		s[c] = s[len - 1 -c)];
-		s[len - 1 - c)] = temp;
+		s[c] = s[len - 1 -c];
+		s[len - 1 - c] = temp;
 	}
 }

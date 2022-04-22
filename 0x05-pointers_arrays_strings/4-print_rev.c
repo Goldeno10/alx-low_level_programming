@@ -11,13 +11,14 @@ void print_rev(char *s)
 	int c;
 	int len;
 	char *i;
-	char temp;
+
 
 	len = 0;
 	for (i = s; *i != '\0'; i++)
 	{
 		len++;
 	}
+	char temp;
 
 	for (c = 0; c < len; c++)
 	{

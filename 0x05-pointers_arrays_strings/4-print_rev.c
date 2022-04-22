@@ -8,11 +8,12 @@
 void print_rev(char *s)
 {
 	int c;
-	int len0 = strlen(s)
-	len = len0 - 1;
-	char temp ;
+	int len0 = strlen(s);
+	char temp;
 
-	for (c = 0; c < len/2; c++)
+	len = len0 - 1;
+
+	for (c = 0; c < (len / 2); c++)
 	{
 		temp = s{c};
 		s{c} = s{len - c};

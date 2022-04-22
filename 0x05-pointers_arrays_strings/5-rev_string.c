@@ -10,7 +10,7 @@ void rev_string(char *s)
 {
 	int c;
 	int len;
-	char temp
+	char temp;
 
 	len = 0;
 	while (s[len])
@@ -21,7 +21,7 @@ void rev_string(char *s)
 	for (c = 0; c < len / 2; c++)
 	{
 		temp = s[c];
-		s[c] = *(s +(len-1));
+		s[c] = *(s +(len - 1));
 		*(s + (len - 1)) = temp;
 	}
 }

@@ -20,8 +20,8 @@ void print_rev(char *s)
 	for (c = 0; c < i; c++)
 	{
 		temp = *s{c};
-		*s{c} = *s{i - c};
-		*s{i - c} = *s{C};
+		*(s + c) = *(s +i - c);
+		*(s + i - c) = *(s + c);
 	}
 	puts(s);
 

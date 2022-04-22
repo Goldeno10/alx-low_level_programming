@@ -21,10 +21,10 @@ void rev_string(char *s)
 	for (c = 0; c < len / 2; c++)
 	{
 		temp = s[c];
-		s[c] = *(s + (len - 1));
-		*(s + (len - 1)) = temp;
+		s[c] = s[c + (len - 1)];
+		s[c + (len - 1)] = temp;
 
-		*(s + (len - 1))++;
+		s[c + (len - 1)]--;
 		s[c]++;
 	}
 }

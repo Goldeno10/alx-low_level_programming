@@ -11,7 +11,7 @@ void print_rev(char *s)
 	int c;
 	int len;
 	char *i;
-	char temp;
+	char *temp;
 
 	len = 0;
 	for (i = s; *i != '\0'; i++)
@@ -21,7 +21,7 @@ void print_rev(char *s)
 
 	for ( c = len -1; c <= 0; c--)
 	{
-		temp = s[c];
-		puts(temp);
+		*temp = s[c];
+		puts(*temp);
 	}
 }

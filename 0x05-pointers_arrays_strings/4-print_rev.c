@@ -12,16 +12,16 @@ void print_rev(char *s)
 	char temp;
 
 	i = 0;
-	while (s{i} != '\0')
+	while (*s{i} != '\0')
 	{
-		i++
+		i++;
 	}
 
 	for (c = 0; c < i; c++)
 	{
-		temp = s{c};
-		s{c} = s{i - c};
-		s{i - c} = s{C};
+		temp = *s{c};
+		*s{c} = *s{i - c};
+		*s{i - c} = *s{C};
 	}
 	puts(s);
 

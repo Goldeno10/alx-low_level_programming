@@ -18,11 +18,10 @@ void print_rev(char *s)
 	{
 		len++;
 	}
-	char temp;
 
 	for (c = 0; c < len; c++)
 	{
-		temp = *(s + c);
+		char temp = *(s + c);
 		*(s + c) = *(s  + (len - c));
 		*(s + (len - c)) = *(s + c);
 	}

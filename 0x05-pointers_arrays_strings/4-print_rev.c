@@ -9,10 +9,8 @@ void print_rev(char *s)
 {
 	int c;
 	int i;
-	int len0 = strlen(s);
 	char temp;
 
-	len = len0 - 1;
 	i = 0;
 	while (s{i} != '\0'}
 	{
@@ -22,8 +20,8 @@ void print_rev(char *s)
 	for (c = 0; c < i; c++)
 	{
 		temp = s{c};
-		s{c} = s{len - c};
-		s{len - c} = s{C};
+		s{c} = s{i - c};
+		s{i - c} = s{C};
 	}
 	puts(s);
 

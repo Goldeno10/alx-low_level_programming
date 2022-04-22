@@ -19,12 +19,9 @@ void print_rev(char *s)
 		len++;
 	}
 
-	for (c = 0; c < len; c++)
+	for ( c = len -1; c <= 0; c--)
 	{
 		temp = *(s + c);
-		*(s + c) = *(s  + (len - c));
-		*(s + (len - c)) = temp;
+		_putchar(temp);
 	}
-	puts(s[c]);
-
 }

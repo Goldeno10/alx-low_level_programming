@@ -11,7 +11,7 @@ void print_rev(char *s)
 	int c;
 	int len;
 	char *i;
-
+	char temp;
 
 	len = 0;
 	for (i = s; *i != '\0'; i++)
@@ -21,9 +21,10 @@ void print_rev(char *s)
 
 	for (c = 0; c < len; c++)
 	{
-		char temp = *(s + c);
+		temp = *(s + c);
 		*(s + c) = *(s  + (len - c));
-		*(s + (len - c)) = *(s + c);
+		*(s + (len - c)) = temp;
+
 	}
 	puts(s);
 

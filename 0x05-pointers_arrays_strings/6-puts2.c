@@ -9,7 +9,6 @@
 void puts2(char *s)
 {
 	int c;
-	int i;
 	int len;
 
 	len = 0;
@@ -17,14 +16,9 @@ void puts2(char *s)
 	{
 		len++;
 	}
-	i = 0;
-	while (s[i])
+        for (c = 0; c <= (len - 1); c += 2)
 	{
-        	for (c = 0; c <= (len - 1); c += 2)
-		{
-			_putchar(s[c]);
-		}
-		i += 2;
+		_putchar(s[c]);
 	}
 	_putchar(012);
 }

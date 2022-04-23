@@ -4,6 +4,7 @@
 *
 *@dest: holds the first string pointer
 *@src: holds the secind string string pointer.
+*@n: Holds number of byte to concated
 *Return: Returns pointer.
 */
 char *_strncat(char *dest, char *src, int n)

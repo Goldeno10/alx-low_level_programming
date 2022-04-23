@@ -6,7 +6,7 @@
 *@str: holds the string being manipulated.
 *Return: Returns nothing.
 */
-void puts2(char *s)
+void puts2(char *str)
 {
 	int c;
 	int len;
@@ -16,7 +16,7 @@ void puts2(char *s)
 	{
 		len++;
 	}
-        for (c = 0; c <= (len - 1); c += 2)
+	for (c = 0; c <= (len - 1); c += 2)
 	{
 		_putchar(s[c]);
 	}

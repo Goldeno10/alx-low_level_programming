@@ -6,7 +6,7 @@
 *@str: holds the string being manipulated.
 *Return: Returns nothing.
 */
-void print_rev(char *s)
+void puts2(char *s)
 {
 	int c;
 	int i;

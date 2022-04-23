@@ -17,16 +17,16 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	n = len - 2;
-	for (c = 0; c <= n / 2; c++)
+	n = len - 1;
+	for (c = n / 2; c <= n; c++)
 	{
-		if (len % 2 == 0)
+		if (n % 2 == 0)
 		{
-			_putchar(str[(c + (len / 2))]);
+			_putchar(str[c]);
 		}
 		else
 		{
-			_putchar(str[(c + (n / 2))]);
+			_putchar(str[c]);
 		}
 	}
 	_putchar(012);

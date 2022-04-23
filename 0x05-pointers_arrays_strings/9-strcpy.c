@@ -21,6 +21,6 @@ char *_strcpy(char *dest, char *src)
 
 	for (c = 0; c <= len; c++)
 	{
-		*dest[c] = scr[c];
+		*dest[c] = *scr[c];
 	return (dest);
 }

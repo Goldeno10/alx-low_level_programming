@@ -29,5 +29,4 @@ void puts_half(char *str)
 			_putchar(str[(c + (n / 2))]);
 		}
 	}
-	_putchar(012);
 }

@@ -23,7 +23,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[len_src] = src[len_src];
 		len_src++;
 	}
-	for (; len_src <n; len_src++)
+	for (; len_src < n; len_src++)
 		dest[len_src] = '\0';
 
 	return (dest);

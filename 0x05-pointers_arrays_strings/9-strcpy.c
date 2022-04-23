@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
 *_strcpy- print half the string.
 *
@@ -22,5 +21,6 @@ char *_strcpy(char *dest, char *src)
 	for (c = 0; c <= len; c++)
 	{
 		dest[c] = src[c];
+	}
 	return (dest);
 }

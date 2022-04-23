@@ -7,7 +7,7 @@
 *@n: Holds number of byte to concated
 *Return: Returns pointer.
 */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int len_dest;
 	int len_src;

@@ -17,7 +17,7 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	n = len + 1;
+	n = len - 1;
 	for (c = (n / 2); c <= n; c++)
 	{
 		if (n % 2 == 0)
@@ -26,7 +26,7 @@ void puts_half(char *str)
 		}
 		else
 		{
-			_putchar(str[c - 1]);
+			_putchar(str[c + 1]);
 		}
 	}
 	_putchar(012);

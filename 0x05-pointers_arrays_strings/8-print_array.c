@@ -9,7 +9,7 @@
 */
 void print_array(int *a, int n)
 {
-i	nt c;
+	int c;
 
 	c = 0;
 	while (c < n)

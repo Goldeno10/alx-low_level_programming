@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*prints_array- print half the string.
+*print_array- print half the string.
 *
 *@a: holds array variablle
 *@n: holds size of array.

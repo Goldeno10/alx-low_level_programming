@@ -17,15 +17,15 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	for (c = 0; c <= (len / 2); c++)
+	for (c = (len / 2); c <= len; c++)
 	{
 		if (len % 2 == 0)
 		{
-			_putchar(str[c + (len / 2)]);
+			_putchar(str[c]);
 		}
 		else
 		{
-			_putchar(str[c + ((len + 1) / 2)]);
+			_putchar(str[c - 1]);
 		}
 	}
 	_putchar(012);

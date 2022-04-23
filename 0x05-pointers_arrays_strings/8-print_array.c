@@ -14,12 +14,12 @@ i	nt c;
 	c = 0;
 	while (c < n)
 	{
-		_putchar(a[c] + '0');
+		_putchar("%d", a[c]);
 		if (c < (n - 1))
 		{
-		_putchar(',');
+		printf(", ");
 		}
 		c++;
 	}
-	_putchar(012);
+	printf("\n");
 }

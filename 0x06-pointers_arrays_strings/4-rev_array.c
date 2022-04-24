@@ -3,20 +3,21 @@
 /**
 *reverse_array- reverses an array.
 *
-*@a: holds the string being manipulated.
-*@n: holds the number of elements in the array
+*@a: holds the array being manipulated.
+*@n: holds the lenght of the array.
 *Return: Returns nothing.
 */
 void reverse_array(int *a, int n)
 {
 	int c;
-	int temp;
+	int i;
+	int temp[sizeof(a)];
 
-
-	for (c = 0; c < (n / 2); c++)
+	i = 0;
+	for (c = n; c >= 0; c--)
 	{
-		temp = a[c];
-		a[c] = a[n - c];
-		a[n - c] = temp;
+		temp[i] = a[c];
+		i++;
 	}
+	a = temp;
 }

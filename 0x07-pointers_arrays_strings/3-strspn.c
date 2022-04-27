@@ -1,16 +1,5 @@
 #include "main.h"
 /**
-*_strchr - ficd a character in memory
-*
-*@s: pointer to a string
-*@c: character to be found
-*
-*Return: A  pointer or null
-*/
-unsigned int _strspn(char *s, char *accept);
-#include "main.h"
-
-/**
  * _strspn - Finds a char in a string
  * @s: points to the string  being checked.
  * @accept: contains the string to be matched

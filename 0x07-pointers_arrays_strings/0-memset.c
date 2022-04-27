@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_memset- fill fst n bytes of memory pnted to by s with the const byte b
+*_memset - fills memory with const byte
 *
 *@s: pointer to a string
 *@b: The constant byte to be used for replacemnt

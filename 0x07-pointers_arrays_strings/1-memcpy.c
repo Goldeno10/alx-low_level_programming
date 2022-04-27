@@ -1,22 +1,22 @@
 #include "main.h"
 /**
-*_memset - fills memory with const byte
+*_memcpy - fills memory with copied pointer
 *
-*@s: pointer to a string
-*@b: The constant byte to be used for replacemnt
+*@dest: pointer to a string
+*@src: Pointer to  source string
 *@n: number of bytes
 *
 *Return: A  pointer
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-        unsigned int i;
+	unsigned int i;
 
-        i = 0;
-        while (i < n)
-        {
-                *(s + i) = *(s +1);
-                i++;
-        }
-        return (dest);
+	i = 0;
+	while (i < n)
+	{
+		*(dest + i) = *(src +i);
+		i++;
+	}
+	return (dest);
 }

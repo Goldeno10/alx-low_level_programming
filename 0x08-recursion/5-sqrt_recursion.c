@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_eval - determines the sqrt
+*eval - determines the sqrt
 *@i: An integer variable
 *@n: the interger whose sqrt is being sorted
 *Return: Sqrt

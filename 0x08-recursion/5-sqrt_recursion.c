@@ -5,7 +5,7 @@
 *@n: the interger whose sqrt is being sorted
 *Return: Sqrt
 */
-int _eval(int i, int n)
+int eval(int i, int n)
 {
 
 	if (n == 0 || n == 1)
@@ -43,7 +43,7 @@ int _sqrt_recursion(int n)
 
 	else
 	{
-		return (_evaluate(i, n));
+		return (eval(i, n));
 	}
 
 

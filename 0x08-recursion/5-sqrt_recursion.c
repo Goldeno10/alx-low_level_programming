@@ -14,7 +14,7 @@ int eval(int i, int n)
 	}
 	else if (i * i < n)
 	{
-		return (_evaluate(i + 1, n));
+		return (eval(i + 1, n));
 	}
 	else if (i * i == n)
 	{

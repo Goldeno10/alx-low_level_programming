@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-*_pow_recusoin - returns the value of x raised to the power of y
+*_pow_recusion - returns the value of x raised to the power of y
 *@x:An integer
 *@y: the power
 *Return: An interger
 */
-int _pow_recursoin(int x, int y)
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 	{

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _str_len_recursion - pritn string lenght
+ * _strlen_recursion - pritn string lenght
  *@s: pointer to a strong
  * Return: Always an int
  */

@@ -3,10 +3,10 @@
 #include <ctype.h>
 #include <string.h>
 /**
- * check_num - checks  string if there are digit
- * @str: array str
+ *check_num - checks  string if there are digit
+ *@str: array str
  *
- * Return; Always 0 (Success)
+ *Return; Always 0 (Success)
  */
 
 int check_num(char *str)
@@ -26,11 +26,11 @@ int check_num(char *str)
 	return (1);
 }
 /**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
+ *main - Print the name of the program
+ *@argc: Count arguments
+ *@argv: Arguments
  *
- * return: Always 0 (Success)
+ *Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 	count = 1;
 	while (count < argc)
 	{
-		if(check_num(argv[count]))
+		if (check_num(argv[count]))
 		{
 			str_to_int = atoi(argv[count]);
 			sum += str_to_int;

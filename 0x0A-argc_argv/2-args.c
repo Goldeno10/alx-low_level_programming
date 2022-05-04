@@ -1,8 +1,7 @@
-
 #include <stdio.h>
 #include "main.h"
 /**
-*main- Main entry point
+*main - Main entry point
 *@argc: Holds number if arguments
 *@argv: Holds the arguments
 *Return: Always 0 (Success)

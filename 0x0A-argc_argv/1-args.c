@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
 *main - Main entry point
 *@argc: Holds number if arguments

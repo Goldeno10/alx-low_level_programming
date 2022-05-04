@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * check_num- checks  string if there are digit
+ * check_num - checks  string if there are digit
  * @str: array str
  *
  * Return; Always 0 (Success)
@@ -27,7 +27,7 @@ int check_num(char *str)
 	return (1);
 }
 /**
- * main- Print the name of the program
+ * main - Print the name of the program
  * @argc: Count arguments
  * @argv: Arguments
  *
@@ -35,9 +35,7 @@ int check_num(char *str)
  */
 
 int main(int argc, char *argv[])
-
 {
-
 	int count;
 	int str_to_int;
 	int sum = 0;

@@ -26,7 +26,7 @@ int check_num(char *str)
 	return (1);
 }
 /**
- *main - Print the name of the program
+ *main- Print the name of the program
  *@argc: Count arguments
  *@argv: Arguments
  *

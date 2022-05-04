@@ -6,7 +6,7 @@
  *check_num - checks  string if there are digit
  *@str: array str
  *
- *Return; Always 0 (Success)
+ *Return: Always 0 (Success)
  */
 
 int check_num(char *str)

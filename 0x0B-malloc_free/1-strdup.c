@@ -49,22 +49,18 @@ char *_strdup(char *str)
 	unsigned int size;
 
 	size = _strlen(str) + 1;
-
+	if (size == 0)
+	{
+		return (NULL);
+	}
 	x = malloc(sizeof(char) * size);
 
-	if (size == 0 || str == NULL)
+	if (x == NULL)
 	{
 		return (NULL);
 	}
-	else if (size > 0)
-	{
-		_strcpy(x, str);
-		return (x);
-	}
-	else
-	{
-		return (NULL);
-	}
+	_strcpy(x, str);
+	return (x);
 	free(x);
 }
 

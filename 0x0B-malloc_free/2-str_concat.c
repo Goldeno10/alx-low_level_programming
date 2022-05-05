@@ -47,7 +47,7 @@ unsigned int _strlen(char *s)
 }
 
 /**
-*str_cat - Joind two strings together
+*str_concat - Joind two strings together
 *@s1: string one
 *s2: string two
 *Return: Pointer to a string

@@ -48,21 +48,33 @@ unsigned int _strlen(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
+
 	unsigned int t_len = _strlen(s1) + _strlen(s2) + 1;
 	unsigned int i;
-	char *cp_str;
-	char *str = malloc(t_len * sizeof(char));
 
-	*str = _strcat(s1, s2);
-	if (s1 == NULL)
+	unsigned int len_s1, len_s2;
+	char *cp_str;
+	char *str;
+
+	if (len_s1 == NULL)
 	{
 		s1 = "";
 	}
-	if (s2 == NULL)
+	if (len_s2 == NULL)
 	{
 		s2 = "";
 	}
-	*cp_str = _strcat(s1, s2);
+	len_s1 = _strlen(s1);
+	len_s2 = _strlen(s2);
+	t_len =  len_s1 + len_s2;
+
+	str = malloc(t_len * sizeof(char));
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
+	cp_str = _strcat(s1, s2);
 	for ( i = 0; i < t_len; i++)
 	{
 		str[i] = cp_str[i];

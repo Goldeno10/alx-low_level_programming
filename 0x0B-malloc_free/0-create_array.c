@@ -9,8 +9,9 @@ char *create_array(unsigned int size, char c)
 {
 	char *x;
 	unsigned int i;
+	unsigned int c;
 
-	x =(char *) malloc(sizeof(c) * size);
+	x = (char *) malloc(sizeof(c) * size);
 
 	if (size == 0)
 	{
@@ -28,5 +29,8 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	free(x);
+	for (c = 0; c < size; c++)
+	{
+		free(x[c]);
+	}
 }

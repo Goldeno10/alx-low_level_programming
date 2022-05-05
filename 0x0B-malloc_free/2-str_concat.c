@@ -53,7 +53,6 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i;
 
 	unsigned int len_s1, len_s2;
-	char *cp_str;
 	char *str;
 
 	len_s1 = _strlen(s1);
@@ -74,10 +73,10 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	cp_str = _strcat(s1, s2);
+	 _strcat(s1, s2);
 	for ( i = 0; i < t_len; i++)
 	{
-		str[i] = cp_str[i];
+		str[i] = s1[i];
 	}
 	str[i] = '\n';
 	return (str);

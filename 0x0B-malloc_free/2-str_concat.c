@@ -56,11 +56,11 @@ char *str_concat(char *s1, char *s2)
 	char *cp_str;
 	char *str;
 
-	if (len_s1 == NULL)
+	if (len_s1 == 0)
 	{
 		s1 = "";
 	}
-	if (len_s2 == NULL)
+	if (len_s2 == 0)
 	{
 		s2 = "";
 	}

@@ -61,11 +61,12 @@ char *str_concat(char *s1, char *s2)
 	unsigned int len_s1, len_s2;
 	char *str;
 
+	_strcat(s1, s2);
 	len_s1 = _strlen(s1);
 	len_s2 = _strlen(s2);
 	t_len =  len_s1 + len_s2;
 
-	str = malloc(t_len * sizeof(char));
+	str = malloc(sizeof(char) * len_s2);
 	if (str == NULL)
 	{
 		return (NULL);

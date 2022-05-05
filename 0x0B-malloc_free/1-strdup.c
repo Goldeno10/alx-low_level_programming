@@ -48,11 +48,11 @@ char *_strdup(char *str)
 	char *x;
 	unsigned int size;
 
-	size = _strlen(str) + 1;
-	if (size == 0)
+	if (str == 0)
 	{
 		return (NULL);
 	}
+	size = _strlen(str) + 1;
 	x = malloc(sizeof(char) * size);
 
 	if (x == NULL)

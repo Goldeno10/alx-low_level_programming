@@ -32,8 +32,8 @@ char *_strcat(char *dest, char *src)
 *Return: An inteteger(length of string)
 */
 
-int _strlen(char *s)
-{                                                         unsigned int len;
+unsigned int _strlen(char *s)
+{
 	unsigned int len;
 
 	len = 0;

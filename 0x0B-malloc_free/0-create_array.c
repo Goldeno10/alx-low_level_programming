@@ -5,16 +5,18 @@
 *@c: The initializing charactern
 *Return: A pointer to char
 */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
-	char *x = malloc(sizeof(c) * size);
-	int i;
+	char *x;
+	unsigned int i;
+
+	x = malloc(sizeof(c) * size);
 
 	if (size == 0)
 	{
 		return (NULL);
 	}
-	else if (size = 0)
+	else if (size > 0)
 	{
 		for (i = 0; i < size; i++)
 		{

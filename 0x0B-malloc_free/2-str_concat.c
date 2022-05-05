@@ -32,8 +32,7 @@ char *_strcat(char *dest, char *src)
 *@s: Pointer to the string
 *Return: An inteteger(length of string)
 */
-
-unsigned int _strlen(char *s)
+int _strlen(char *s)
 {
 	unsigned int len;
 
@@ -55,18 +54,21 @@ unsigned int _strlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 
-	unsigned int t_len = _strlen(s1) + _strlen(s2) + 1;
-	unsigned int i;
+	int t_len = _strlen(s1) + _strlen(s2) + 1;
+	int i;
 
 	unsigned int len_s1, len_s2;
 	char *str;
 
+	if (s1 == NULL)
+		s = "";
+	if (s2 == NULL)
+		s2 = "";
 	_strcat(s1, s2);
 	len_s1 = _strlen(s1);
 	len_s2 = _strlen(s2);
-	t_len =  len_s1 + len_s2;
-
-	str = malloc(sizeof(char) * len_s2);
+	t_len =  (len_s1 + len_s2 + 1);
+	str = malloc(sizeof(char) * t_len);
 	if (str == NULL)
 	{
 		return (NULL);

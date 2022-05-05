@@ -49,7 +49,7 @@ unsigned int _strlen(char *s)
 /**
 *str_concat - Joind two strings together
 *@s1: string one
-*s2: string two
+*@s2: string two
 *Return: Pointer to a string
 */
 char *str_concat(char *s1, char *s2)
@@ -63,14 +63,6 @@ char *str_concat(char *s1, char *s2)
 
 	len_s1 = _strlen(s1);
 	len_s2 = _strlen(s2);
-	if (len_s1 == 0)
-	{
-		s1 = "";
-	}
-	if (len_s2 == 0)
-	{
-		s2 = "";
-	}
 	t_len =  len_s1 + len_s2;
 
 	str = malloc(t_len * sizeof(char));

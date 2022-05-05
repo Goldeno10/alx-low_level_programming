@@ -52,7 +52,7 @@ char *_strdup(char *str)
 
 	x = malloc(sizeof(str) * size);
 
-	if (size == 0)
+	if (size == 0 || str == NULL)
 	{
 		return (NULL);
 	}

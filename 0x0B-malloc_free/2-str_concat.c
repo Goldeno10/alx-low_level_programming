@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_strcat- concatinate two strings.
+*_strcat - concatinate two strings.
 *
 *@dest: holds the first string pointer
 *@src: holds the secind string string pointer.
@@ -26,7 +26,8 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 #include "main.h"
-#include <stdlib.h>                               /**
+#include <stdlib.h>
+/**
 *_strlen - evaluate the lenght of a string
 *@s: Pointer to the string
 *Return: An inteteger(length of string)
@@ -45,7 +46,12 @@ unsigned int _strlen(char *s)
 	return (len);
 }
 
-
+/**
+*str_cat - Joind two strings together
+*@s1: string one
+*s2: string two
+*Return: Pointer to a string
+*/
 char *str_concat(char *s1, char *s2)
 {
 
@@ -74,7 +80,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	 _strcat(s1, s2);
-	for ( i = 0; i < t_len; i++)
+	for (i = 0; i < t_len; i++)
 	{
 		str[i] = s1[i];
 	}

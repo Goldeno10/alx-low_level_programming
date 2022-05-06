@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * free_grid - free allocated memory for 2D array
  * @grid: Pointer to the array

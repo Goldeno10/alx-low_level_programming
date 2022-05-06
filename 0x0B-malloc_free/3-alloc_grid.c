@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
 *alloc_grid - create an array of 0s
 *@width: the the column count:

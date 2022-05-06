@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * argstostr - Concatinate arguments entered
  * @ac: The width of the array

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_grid - frees a 2 dimensional array.
+ * free_arr - frees a 2 dimensional array.
  * @arr: nD array of char.
  * @height: height of the array.
  *

@@ -5,16 +5,16 @@
 *@s: Pointerto the string
 *Return: integer
 */
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int len;
+	unsigned int len;
 
 	len = 0;
 	while (s != 0)
 	{
 		len++;
 	}
-	return (len)
+	return (len);
 }
 
 
@@ -26,9 +26,9 @@ int _strlen(char *s)
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i;
-	int len_s1 = _strlen(s1);
-	int len_s2 = _strlen(s2);
+	unsigned int i = 0;
+	unsigned int len_s1 = _strlen(s1);
+	unsigned int len_s2 = _strlen(s2);
 	char *str = malloc(sizeof(char)* len_s1 + n);
 
 	if (str == NULL)

@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
 			if (argv[i][c] > 57 || argv[i][c] < 48)
 			{
 				printf("Error\n");
-				exit(98); }
+				exit(98);
+			}
 		}
 
 	}

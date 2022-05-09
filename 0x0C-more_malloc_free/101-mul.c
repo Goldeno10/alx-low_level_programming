@@ -4,33 +4,27 @@
 /**
  * main - multiplies two positive numbers
  * @argc: Arguments count
- * @argv: argument s
+ * @argv: arguments vector
  * Return: integer
  */
 int main(int argc, char *argv[])
 {
-	unsigned long mul;
-	int i;
-	int c;
-
+unsigned long mul;
+int i, j;
 	if (argc != 3)
-	{
-		printf("Error\n");
-		exit(98);
-	}
+	{ printf("Error\n");
+	exit(98); }
 	for (i = 1; i < argc; i++)
 	{
-		for (c = 0; argv[i][c] != '\0'; c++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][c] > 57 || argv[i][c] < 48)
-			{
-				printf("Error\n");
-				exit(98);
-			}
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{  printf("Error\n");
+			exit(98); }
 		}
 
 	}
-	mul = atoi(argv[1]) * atoi(argv[2]);
+	mul = atol(argv[1]) *atol(argv[2]);
 	printf("%lu\n", mul);
 return (0);
 }

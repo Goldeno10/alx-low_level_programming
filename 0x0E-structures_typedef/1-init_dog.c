@@ -1,12 +1,17 @@
 #include "dog.h"
 /**
-*dog_t - Typedef for struct dog
+*init_dog: Initialize a dog structure
+*@d: Dog structure to be initialized
+*@name: Dog name
+*@age: Dog age
+*@owner: Dog owner
+*
+*Return: Nothing
 */
-typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d -> name = name;
-	d -> age = age;
-	d -> owner = owner;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 
 }

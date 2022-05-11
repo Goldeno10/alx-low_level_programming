@@ -1,25 +1,10 @@
-#include "main.h"
-/**
-*dog_t - Typedef for struct dog
-*/
-typedef struct dog dog_t;
-
-/**
-*struct dog - holds dog data
-*@name: holds dogs name
-*@age: Holds dogs age
-*@owner holds dog owner name
-*/
-struct dog {
-	char *name;
-	float age;
-	char *owner;
-}
+#include "dog.h"
+#include <stdlib.h>
 /**
 *new_dog - Creats a dog
 *@name: holds dogs name
 *@age: Holds dogs age
-*@owner holds dog owner name
+*@owner: holds dog owner name
 *Return: A dog profile
 */
 
@@ -31,9 +16,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 
-	dog -> name = name;
-	dog -> age = age;
-	dog -> owner = owner;
+	dog->name = name;
+	dog->age = age;
+	dog->owner = owner;
 
-	return(dog);
+	return (dog);
 }

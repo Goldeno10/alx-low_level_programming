@@ -1,11 +1,12 @@
 #include "function_pointers.h"
+
 /**
 *int_index - calls the compare the function
 *@array: array of ints to comp
 *@size: size of array
 *@cmp: pointer to the compare function
 *Return: An int
-*Description: If no element matches, return -1
+*If no element matches, return -1
 *If size <= 0, return -1
 */
 

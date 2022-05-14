@@ -4,8 +4,10 @@
 *array_iterator - iterate thru an array and aplly a func
 *@array: Array
 *@size: size of array
-*action: function pointer
+*@action: function pointer
 *Return: Nothing
+*Desctription:executes a function given as a parameter
+* on each element of an array.
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int))

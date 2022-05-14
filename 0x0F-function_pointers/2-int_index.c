@@ -3,8 +3,10 @@
 *int_index - calls the compare the function
 *@array: array of ints to comp
 *@size: size of array
-*@comp: pointer to the compare function
+*@cmp: pointer to the compare function
 *Return: An int
+*Description: If no element matches, return -1
+*If size <= 0, return -1
 */
 
 int int_index(int *array, int size, int (*cmp)(int))

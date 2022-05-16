@@ -1,6 +1,9 @@
 #ifndef V_FUNCTIONS_H
 #define V_FUNCTIONS_H
 
+#include <stdio.h>
+#include <stdarg.h>
+
 int sum_them_all(const unsigned int n, ...);
 void _putchar(char c);
 void print_all(const char * const format, ...);

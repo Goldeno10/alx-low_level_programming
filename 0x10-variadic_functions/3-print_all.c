@@ -1,53 +1,50 @@
 #include "variadic_functions.h"
-
 /**
-*
-*
-*
-*
-*
+*print_all - Print all data types
+*@format: Formats for input data
+*Return: Nothing
 */
 void print_all(const char * const format, ...)
 {
-	char c;
-	int i, j;
-	float f;
+	va_list inp_list;
+	unsigned int i = 0, j, c = 0;
 	char *s;
-	int len = 0, z;
-	char *cm;
+	const char allowed_fmt[] = "cifs";
 
-	va_list all_frmts;
-	va_start(all_frmts, format);
-while(format != '\0')
-	len++
-
-j = 0;
-while (j <= len);
-	if (j < len)
-		cm = ","
-
-	switch (format[j])
+	va_start(inp_list, format);
+	while (format && format[i])
 	{
-	case "c":
-		c = va_arg(char_list, char);
-		printf("%c%s", c, cm);
-	case "i":
-		i = va_arg(char_list, int);
-		printf("%i%s", i, cm);
-	case "f":
-		f = va_arg(char_list, float);
-		printf("%f%s", f, cm);
-	case "s":
-		s = va_arg(char_list, char *);
-		if (s == NULL)
-			printf("(nil)");
-			continue;
-		printf("%s%s", s, cm);
-	default:
-		z = 0;
+		j = 0;
+		while (allowed_fmt[j])
+		{
+			if (format[i] == allowed_fmt[j] && c)
+			{
+				printf(", ");
+				break;
+			} j++;
+		}
+		switch (format[i])
+		{
+		case 'c':
+			printf("%c", va_arg(inp_list, int)), c = 1;
+			break;
+		case 'i':
+			printf("%d", va_arg(inp_list, int)), c = 1;
+			break;
+		case 'f':
+			printf("%f", va_arg(inp_list, double)), c = 1;
+			break;
+		case 's':
+			s = va_arg(inp_list, char *), c = 1;
+			if (!s)
+			{
+				printf("(nil)");
+				break;
+			}
+			printf("%s", s);
+			break;
+		} i++;
 	}
-	j++
-	cm = "\0"
-}
-	}
+	printf("\n");
+	va_end(inp_list);
 }

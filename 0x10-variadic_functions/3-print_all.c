@@ -25,26 +25,25 @@ void print_all(const char * const format, ...)
 		}
 		switch (format[i])
 		{
-		case 'c':
-			printf("%c", va_arg(inp_list, int)), c = 1;
-			break;
-		case 'i':
-			printf("%d", va_arg(inp_list, int)), c = 1;
-			break;
-		case 'f':
-			printf("%f", va_arg(inp_list, double)), c = 1;
-			break;
-		case 's':
-			s = va_arg(inp_list, char *), c = 1;
-			if (!s)
-			{
-				printf("(nil)");
+			case 'c':
+				printf("%c", va_arg(inp_list, int)), c = 1;
 				break;
-			}
-			printf("%s", s);
-			break;
+			case 'i':
+				printf("%d", va_arg(inp_list, int)), c = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(inp_list, double)), c = 1;
+				break;
+			case 's':
+				s = va_arg(inp_list, char *), c = 1;
+				if (!s)
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", s);
+				break;
 		} i++;
 	}
-	printf("\n");
-	va_end(inp_list);
+	printf("\n"), va_end(inp_list);
 }

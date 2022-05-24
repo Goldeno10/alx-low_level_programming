@@ -9,6 +9,7 @@
 size_t print_list(const list_t *h)
 {
 	int num_of_node = 0;
+	/* h = malloc(sizeof(const list_t *)); */
 
 	while (h != NULL)
 	{

@@ -8,6 +8,9 @@
 size_t list_len(const list_t *h)
 {
 	size_t len;
+
+	/* h = malloc(sizeof(list_t *)) */
+
 	while (h != NULL)
 	{
 		h = h->next;

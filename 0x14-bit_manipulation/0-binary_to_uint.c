@@ -5,32 +5,31 @@
 *@b: binary bits
 *Return: unit value of binary bits
 */
-
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int num, x;
-	int len = 0;
+	unsigned int uint, place;
+	int n;
 
 	if (!b)
 		return (0);
 
-	for (; b[len]; )
-		len++;
-	len--;
-	for (x = 1, num = 0; len >= 0; len--)
+	for (n = 0; b[n]; n++)
+		;
+	n--;
+	for (place = 1, uint = 0; n >= 0; n--)
 	{
-		if (b[len] == '0')
+		if (b[n] == '0')
 		{
-			x *= 2;
+			place *= 2;
 			continue;
 		}
-		else if (b[len] == '1')
+		else if (b[n] == '1')
 		{
-			num += x;
-			x *= 2;
+			uint += place;
+			place *= 2;
 			continue;
 		}
 		return (0);
 	}
-	return (num);
+	return (uint);
 }

@@ -5,6 +5,7 @@
 *@b: binary bits
 *Return: unit value of binary bits
 */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num, x;

@@ -20,16 +20,16 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[len] == '0')
 		{
-			place *= 2;
+			i *= 2;
 			continue;
 		}
 		else if (b[len] == '1')
 		{
-			uint += place;
-			place *= 2;
+			num += i;
+			i *= 2;
 			continue;
 		}
 		return (0);
 	}
-	return (uint);
+	return (num);
 }

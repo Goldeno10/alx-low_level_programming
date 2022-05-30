@@ -2,7 +2,7 @@
 
 /**
 *binary_to_unit - Converts binary to units
-*b: binary bits
+*@b: binary bits
 *Return: unit value of binary bits
 */
 unsigned int binary_to_uint(const char *b)

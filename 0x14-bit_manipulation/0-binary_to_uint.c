@@ -7,23 +7,23 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int uint, place;
-	int n;
+	unsigned int num, i;
+	int len;
 
 	if (!b)
 		return (0);
 
-	for (n = 0; b[n]; n++)
+	for (len = 0; b[len]; len++)
 		;
-	n--;
-	for (place = 1, uint = 0; n >= 0; n--)
+	len--;
+	for (i = 1, num = 0; len >= 0; len--)
 	{
-		if (b[n] == '0')
+		if (b[len] == '0')
 		{
 			place *= 2;
 			continue;
 		}
-		else if (b[n] == '1')
+		else if (b[len] == '1')
 		{
 			uint += place;
 			place *= 2;

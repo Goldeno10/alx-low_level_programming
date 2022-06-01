@@ -1,11 +1,13 @@
 #include "main.h"
 #define PERM 0600
+
 /**
 *create_file - creates a file and write to it
 *@filename: File Name
 *@text_content: Text content
 *Return: return 1 (success) or -1 (failiure)
 */
+
 int create_file(const char *filename, char *text_content)
 {
 	int fd, n, len = 0;

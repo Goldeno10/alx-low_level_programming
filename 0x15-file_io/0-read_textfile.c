@@ -1,12 +1,9 @@
 #include "main.h"
 /**
 *read_textfile - reads a text file and prints it
-* to the POSIX standard output.
 *@filename: Filename
-*@letters:letters is the number of letters
-* it should read and print
-*Return: the actual number of letters it
-* could read and print
+*@letters:letters is the number of lettter
+*Return: the actual number of letters
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -15,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char buf[1024];
 
 	if (filename == NULL)
-                return (0);
+		return (0);
 
 
 	if ((fd = open(filename, O_RDONLY)) == -1)

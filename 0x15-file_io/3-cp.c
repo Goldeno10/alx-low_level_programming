@@ -2,10 +2,10 @@
 #define PERM 0664
 #define BUF 1024
 /**
-*
-*
-*
-*
+*main - Main entry point
+*@argc: Number of arguments
+*@argv:The arguments 
+*Return: An integer
 */
 int main(int argc,char *argv[])
 {

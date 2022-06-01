@@ -1,0 +1,32 @@
+unsigned int binary_to_uint(const char *b)
+{
+        unsigned int x, value, len;
+
+
+        if (b == NULL)
+                return (0);
+
+        len = 0;
+        while (b[len])
+                len++;
+
+        len--;
+        value = 0;
+        for ( x = 0; len >= 0; x++, len--)
+        {
+
+                if (b[len] == '0')
+                {
+                        value += 0;
+                        continue;
+                }
+                else if (b[len] == '1')
+                {
+//                      value += _pow(2, x);
+                        continue;
+                }
+                return (94);
+        }
+
+        return (value);
+}

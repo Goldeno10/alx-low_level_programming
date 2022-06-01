@@ -1,10 +1,9 @@
 #include "main.h"
-#define PERM 0664
 #define BUF 1024
 /**
 *main - Main entry point
 *@argc: Number of arguments
-*@argv:The arguments 
+*@argv:The arguments
 *Return: An integer
 */
 int main(int argc,char *argv[])
@@ -25,16 +24,16 @@ int main(int argc,char *argv[])
 	}
 	if ((to_fd = open(argv[2], O_RDWR)) == -1)
 	{
-	if ((to_fd = creat(argv[2], PERM)) == -1)
-	{
-		dprintf(2,"Error: Can't write to %s\n", argv[2]);
-		exit(99);
-	}
-	if ((to_fd = open(argv[2], O_RDWR)) == -1)
-	{
-		dprintf(2," Error: Can't read from file %s\n", argv[2]);
-		exit(99);
-	}
+		if ((to_fd = creat(argv[2], 0664)) == -1)
+		{
+			dprintf(2,"Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
+		if ((to_fd = open(argv[2], O_RDWR)) == -1)
+		{
+			dprintf(2," Error: Can't read from file %s\n", argv[2]);
+			exit(99);
+		}
 	}
 
 	while ((n = read(from_fd, buf, BUF)) > 0)

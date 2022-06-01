@@ -20,7 +20,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if ((fd = open(filename, O_RDONLY)) == -1)
 		return (0);
 	if ((n = read(fd, buf, letters)) > 0)
-		if ((x = write(1, buf, n)) != n)
+		if ((x = write(1, buf, letters)) != letters)
 			return (0);
+	close(fd);
 	return (x);
 }

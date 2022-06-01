@@ -1,5 +1,9 @@
 #include "main.h"
 #define BUF 1024
+
+
+
+
 /**
 *main - Main entry point
 *@argc: Number of arguments
@@ -39,7 +43,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	n = read(from_fd, buf, BUF);
-	while (n > 0)
+	if (n > 0)
 	{
 		if ((write(to_fd, buf, n)) != n)
 		{

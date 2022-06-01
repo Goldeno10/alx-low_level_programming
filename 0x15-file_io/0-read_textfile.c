@@ -10,8 +10,9 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, n, x = 0;
-	char buf[BUFSIZ];
+	int fd;
+	size_t n, x = 0;
+	char buf[1024];
 
 	if (filename == NULL)
                 return (0);
@@ -20,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if ((fd = open(filename, O_RDONLY)) == -1)
 		return (0);
 	if ((n = read(fd, buf, letters)) > 0)
-		if ((x = write(1, buf, letters)) != letters)
+		if ((x = write(1, buf, n)) != n)
 			return (0);
 	close(fd);
 	return (x);

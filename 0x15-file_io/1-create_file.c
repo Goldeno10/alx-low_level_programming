@@ -19,10 +19,11 @@ int create_file(const char *filename, char *text_content)
 
 	while (text_content[len])
 		len++;
-
-	if ((fd = creat(filename, PERM)) == -1)
+	fd = creat(filename, PERM);
+	if (fd == -1)
 		return (-1);
-	if ((n = write(fd, text_content, len)) != len)
+	n = write(fd, text_content, len);
+	if (n != len)
 		return (-1);
 	close(fd);
 	return (1);

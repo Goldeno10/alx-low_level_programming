@@ -1,7 +1,7 @@
 #include "main.h"
 #define PERM 0600
 /**
-*creat_file - creates a file and write to it
+*create_file - creates a file and write to it
 *@filename: Filename
 *@text_content: Text content)
 *Return: 1 (succes) or -1 (failiure)

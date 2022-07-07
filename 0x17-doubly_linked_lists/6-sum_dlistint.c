@@ -6,13 +6,22 @@
 */
 int sum_dlistint(dlistint_t *head)
 {
-	dlistint_t *node = head;
-	int n = 0;
-
-	while (node)
+	int sum = 0;
+	if (!head)
+		return (0);
+	if (head)
 	{
-		node = node->next;
-		n++;
+		while (head->prev)
+			head = head->prev;
+
 	}
-	return (n);
+	if (head)
+	{
+		while (head)
+		{
+			sum += head->n;
+			head = head->next;
+		}
+	}
+	return (sum);
 }

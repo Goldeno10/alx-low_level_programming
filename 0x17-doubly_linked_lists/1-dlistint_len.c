@@ -2,7 +2,7 @@
 /**
 *distint_len - Evaluate the number of elements in a linked dlistint_t list.
 *@h: Pointer to head node
-Return: Number of node
+*Return: Number of node
 */
 
 size_t dlistint_len(const dlistint_t *h)

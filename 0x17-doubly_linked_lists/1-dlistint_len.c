@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-*distint_len - Evaluate the number of elements in a linked dlistint_t list.
+*dlistint_len - Evaluate the number of elements in a linked dlistint_t list.
 *@h: Pointer to head node
 *Return: Number of node
 */

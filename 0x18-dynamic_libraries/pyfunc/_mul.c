@@ -1,5 +1,5 @@
 #include "pyfun.h"
-/*
+/**
 *mul - multiplies two integers together
 *@a: Integer one
 *@b: Integer two

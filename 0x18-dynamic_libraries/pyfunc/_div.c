@@ -1,5 +1,5 @@
 #include "pyfun.h"
-/*
+/**
 *div - devide integers a by b
 *@a: Integer one
 *@b: Integer two

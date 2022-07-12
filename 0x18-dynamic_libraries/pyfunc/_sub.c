@@ -1,5 +1,5 @@
 #include "pyfun.h"
-/*
+/**
 *sub - Subtract a number "b" from "a"
 *@a: Integer one
 *@b: Integer two

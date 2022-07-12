@@ -1,5 +1,5 @@
 #include "pyfun.h"
-/*
+/**
 *add - Adds two integers together
 *@a: Integer one
 *@b: Integer two

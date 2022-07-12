@@ -5,7 +5,7 @@
 *@b: Integer two
 *Return: remainder of the devision of a by b
 */
-int md(int a, int b)
+int mod(int a, int b)
 {
 	return ((a) % (b));
 }

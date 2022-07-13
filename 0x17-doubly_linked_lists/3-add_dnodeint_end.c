@@ -17,6 +17,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	new->n = n;
 	new->next = NULL;
+	/* navigating to the end node if node is not null*/
 	if (current)
 	{
 		while (current->next)
@@ -24,7 +25,12 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	new->prev = current;
 	if (current)
+	{
 		current->next = new;
-
+	}
+	else
+	{
+		*head = new;/* if head node point to null l, the point it to new node*/
+	}
 	return (new);
 }

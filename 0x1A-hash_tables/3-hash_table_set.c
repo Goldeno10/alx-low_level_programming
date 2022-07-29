@@ -17,10 +17,10 @@ hash_node_t *add_hash_node(hash_node_t **h, const char *k, const char *v)
 
 	while (tmp != NULL)
 	{
-		if (strcmp(k, tmp->k) == 0)
+		if (strcmp(k, tmp->key) == 0)
 		{
 			free(tmp->value);
-			tmp->v = strdup(v);
+			tmp->value = strdup(v);
 			return (*h);
 		}
 		tmp = tmp->next;
@@ -31,8 +31,8 @@ hash_node_t *add_hash_node(hash_node_t **h, const char *k, const char *v)
 	if (tmp == NULL)
 		return (NULL);
 
-	tmp->k = strdup(k);
-	tmp->v = strdup(v);
+	tmp->key = strdup(k);
+	tmp->value = strdup(v);
 	tmp->next = *h;
 	*h = tmp;
 

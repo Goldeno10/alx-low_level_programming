@@ -8,7 +8,7 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i, size = 1023;
+	unsigned long int i, size;
 	hash_node_t *node;
 	unsigned long int last_index;
 
@@ -22,6 +22,7 @@ void hash_table_print(const hash_table_t *ht)
 		printf("{}");
 		return;
 	}
+	size = ht->size
 	last_index = get_last_index(ht->array, ht->size);
 	printf("{");
 	for (i = 0; i < size; i++)

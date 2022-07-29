@@ -13,15 +13,15 @@ hash_node_t *add_hash_node(hash_node_t **h, const char *k, const char *v)
 {
 	hash_node_t *tmp;
 
-	tmp = *head;
+	tmp = *h;
 
 	while (tmp != NULL)
 	{
-		if (strcmp(key, tmp->key) == 0)
+		if (strcmp(k, tmp->k) == 0)
 		{
 			free(tmp->value);
-			tmp->value = strdup(value);
-			return (*head);
+			tmp->v = strdup(v);
+			return (*h);
 		}
 		tmp = tmp->next;
 	}
@@ -31,12 +31,12 @@ hash_node_t *add_hash_node(hash_node_t **h, const char *k, const char *v)
 	if (tmp == NULL)
 		return (NULL);
 
-	tmp->key = strdup(key);
-	tmp->value = strdup(value);
-	tmp->next = *head;
-	*head = tmp;
+	tmp->k = strdup(k);
+	tmp->v = strdup(v);
+	tmp->next = *h;
+	*h = tmp;
 
-	return (*head);
+	return (*h);
 }
 
 /**

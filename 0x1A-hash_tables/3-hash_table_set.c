@@ -1,27 +1,27 @@
 #include "hash_tables.h"
 
 /**
- * add_n_hash - adds a node at the beginning of
+ * add_hash_node - adds a node at the beginning of
  * a hash at a given index
  *
- * @head: head of the hash linked list
- * @key: The hash key
- * @value: value to store
+ * @h: head of the hash linked list
+ * @k: The hash key
+ * @v: value to store
  * Return: head of the hash
  */
-hash_node_t *add_hash_node(hash_node_t **head, const char *key, const char *value)
+hash_node_t *add_hash_node(hash_node_t **h, const char *k, const char *v)
 {
 	hash_node_t *tmp;
 
-	tmp = *head;
+	tmp = *h;
 
 	while (tmp != NULL)
 	{
-		if (strcmp(key, tmp->key) == 0)
+		if (strcmp(k, tmp->key) == 0)
 		{
 			free(tmp->value);
-			tmp->value = strdup(value);
-			return (*head);
+			tmp->value = strdup(v);
+			return (*h);
 		}
 		tmp = tmp->next;
 	}
@@ -31,16 +31,16 @@ hash_node_t *add_hash_node(hash_node_t **head, const char *key, const char *valu
 	if (tmp == NULL)
 		return (NULL);
 
-	tmp->key = strdup(key);
-	tmp->value = strdup(value);
-	tmp->next = *head;
-	*head = tmp;
+	tmp->key = strdup(k);
+	tmp->value = strdup(v);
+	tmp->next = *h;
+	*h = tmp;
 
-	return (*head);
+	return (*h);
 }
 
 /**
- * hash_table_set - adds a hash (key, value) to a 
+ * hash_table_set - adds a hash (key, value) to a
  * given hash table
  * @ht: pointer to the hash table
  * @key: key of the hash

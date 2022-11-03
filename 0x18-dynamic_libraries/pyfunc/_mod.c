@@ -1,5 +1,5 @@
 #include "pyfun.h"
-/*
+/**
 *mod - compute the moduluse of  two integers
 *@a: Integer one
 *@b: Integer two

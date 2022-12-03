@@ -13,11 +13,11 @@ void _close(int fd_1, int fd_2);
 int main(int argc, char *argv[])
 {
 	int from_fd, to_fd, n_1, n_2;
-	char buf[BUF];
+	char *buf = malloc(BUF + 1);
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from  file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	from_fd = open(argv[1], O_RDONLY);
